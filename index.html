@@ -46,7 +46,38 @@
     <header>
       <nav class="navbar bg-body-tertiary border-bottom border-2">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 fw-bold fs-3"> Weather App </span>
+          <a
+            class="navbar-brand mb-0 h1 fw-bold fs-3 d-flex align-items-center me-auto me-md-0"
+            href="#"
+          >
+            <img
+              src="assets/images/logo-icon.png"
+              alt="Logo icon"
+              class="d-none d-md-block"
+              width="54"
+              height="48"
+            />
+            Weather App
+          </a>
+          <div class="input-group mx-auto" style="max-width: 36%">
+            <input
+              type="text"
+              class="form-control"
+              name="city-name"
+              placeholder="Search city"
+              aria-label="Search city"
+              aria-describedby="city-name"
+            />
+            <span class="input-group-text search-icon" id="city-name"
+              ><i class="bi bi-search"></i
+            ></span>
+          </div>
+          <div
+            class="ms-auto rounded-circle border border-2 d-flex align-items-center justify-content-center toggle-temp-reading"
+            style="width: 40px; height: 40px"
+          >
+            °F
+          </div>
         </div>
       </nav>
     </header>
