@@ -32,7 +32,8 @@ body {
   background: #e2e6ea;
 }
 
-.dataset-1 {
+.dataset-1,
+.dataset-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +41,8 @@ body {
 }
 
 .dataset-1 > div,
-.dataset-2 > div {
+.dataset-2 > div,
+.dataset-3 > div {
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -53,6 +55,14 @@ body {
 
 .dataset-2 > div {
   gap: 0.25rem;
+}
+
+.dataset-3 > div {
+  flex-grow: 1;
+}
+
+.dataset-3 i {
+  font-size: 3rem;
 }
 
 hr {
