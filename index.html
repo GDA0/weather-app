@@ -59,19 +59,25 @@
             />
             Weather App
           </a>
-          <div class="input-group mx-auto" style="max-width: 36%">
-            <input
-              type="text"
-              class="form-control"
-              name="city-name"
-              placeholder="Search city"
-              aria-label="Search city"
-              aria-describedby="city-name"
-            />
-            <span class="input-group-text search-icon" id="city-name"
-              ><i class="bi bi-search"></i
-            ></span>
-          </div>
+          <form class="mx-auto" style="min-width: 36%">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                name="city-name"
+                placeholder="Search city"
+                aria-label="Search city"
+                aria-describedby="city-name"
+              />
+              <span
+                class="input-group-text search-icon"
+                id="city-name"
+                onclick="document.querySelector('.submit-search-form').click()"
+                ><i class="bi bi-search"></i
+              ></span>
+            </div>
+            <button type="submit" class="d-none submit-search-form"></button>
+          </form>
           <div
             class="ms-auto rounded-circle border border-2 d-flex align-items-center justify-content-center toggle-temp-reading"
             style="width: 40px; height: 40px"
