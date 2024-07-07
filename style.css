@@ -21,14 +21,14 @@ body {
 }
 
 .search-icon,
-.toggle-temp-reading {
+.toggle-temperature-unit {
   transition: background-color 0.3s;
   cursor: pointer;
   will-change: contents;
 }
 
 .search-icon:hover,
-.toggle-temp-reading:hover {
+.toggle-temperature-unit:hover {
   background: #e2e6ea;
 }
 
@@ -55,6 +55,10 @@ body {
 
 .dataset-2 > div {
   gap: 0.25rem;
+}
+
+.dataset-2 .temperature-and-icon {
+  gap: 0.75rem;
 }
 
 .dataset-3 > div {

@@ -79,8 +79,9 @@
             <button type="submit" class="d-none submit-search-form"></button>
           </form>
           <div
-            class="ms-auto rounded-circle border border-2 d-flex align-items-center justify-content-center toggle-temp-reading"
+            class="ms-auto rounded-circle border border-2 d-flex align-items-center justify-content-center toggle-temperature-unit"
             style="width: 40px; height: 40px"
+            title="Display in °F"
           >
             °F
           </div>
@@ -147,7 +148,7 @@
               />
             </div>
           </div>
-          <div class="condition">
+          <div class="condition fst-italic">
             <p class="data">Partly cloudy</p>
           </div>
           <hr />
@@ -200,6 +201,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- DateFns -->
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
