@@ -82,7 +82,9 @@
       </nav>
     </header>
     <main class="flex-grow-1">
-      <div class="container-fluid row row-cols-1 row-cols-md-3 p-3 mx-auto">
+      <div
+        class="container-fluid row row-cols-1 row-cols-md-3 p-3 mx-auto overflow-x-auto gap-3 gap-md-0"
+      >
         <div class="col col-md-3 dataset-1">
           <div class="wind-speed border border-2 rounded">
             <i class="bi bi-wind"></i>
@@ -120,13 +122,33 @@
             </div>
           </div>
         </div>
-        <div class="col col-md-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-          deserunt libero excepturi vitae, inventore repellat ipsum non dolorum
-          modi officiis quos deleniti dolorem accusamus culpa repudiandae,
-          cupiditate laboriosam ipsam iure minus ducimus omnis. Eum iste
-          voluptatum exercitationem facilis officia maxime nihil ipsum!
-          Reprehenderit veritatis aut quas cupiditate aspernatur architecto at!
+        <div
+          class="col col-md-6 dataset-2 rounded d-flex align-items-center flex-column justify-content-center border border-2"
+        >
+          <div class="location">
+            <i class="bi bi-geo-alt"></i>
+            <p class="data">Koforidua, Eastern, Ghana</p>
+          </div>
+          <div class="temperature-and-icon">
+            <div class="temperature">
+              <p class="data lead display-1">27°C</p>
+            </div>
+            <div class="icon ms-auto">
+              <img
+                class="data img-fluid"
+                src="//cdn.weatherapi.com/weather/64x64/day/116.png"
+                alt="Partly cloudy"
+              />
+            </div>
+          </div>
+          <div class="condition">
+            <p class="data">Partly cloudy</p>
+          </div>
+          <hr />
+          <div class="date-and-time">
+            <i class="bi bi-calendar2-event"></i>
+            <p class="data">23rd May, 2024 As of <b>6:00 PM</b></p>
+          </div>
         </div>
         <div class="col col-md-3">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
